@@ -11,9 +11,11 @@ $color-orange: #F28B64
     max-width: 1140px
     margin: 0 auto
 .main-section
+    position: relative
     height: 800px
     background: #F0F0F0
     padding-top: 16px
+    overflow: hidden
     &__nav-container
         display: flex
         flex-direction: row
@@ -21,11 +23,19 @@ $color-orange: #F28B64
         height: 69px
         align-items: center
     &__logo
-        width: 134px
+        height: 69px
     &__content-container
         position: relative
         display: flex
         flex-direction: row
+    &__first-elipse
+        position: absolute
+        top: 129px
+        right: 34px
+    &__second-elipse
+        position: absolute
+        right: -120px
+        top: 650px
 
 .nav-menu
     &__list
@@ -42,41 +52,38 @@ $color-orange: #F28B64
     img
         position: relative
         z-index: 5
-    &__rentagle-blue
+    &__rectangle-blue
         position: absolute
         top: 150px
         left: -50px
-        width: 570.51px
-        height: 212.31px
-
+        width: 565.95px
+        height: 220px
         background: $color-blue
         border-radius: 100px
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
         transform: rotate(-64deg)
         z-index: 2
-    &__rentagle-orange
+    &__rectangle-orange
         position: absolute
         width: 618.43px
         height: 220px
         left: -30px
         top: 160px
-
         background: $color-orange
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
         border-radius: 100px
-        transform: rotate(-49.97deg)
+        transform: rotate(-50.81deg)
         z-index: 3
-    &__rentagle-grey
+    &__rectangle-grey
         position: absolute
         width: 608.97px
         height: 220px
         left: 10px
         top: 190px
-
         background: #E2E2E2
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
         border-radius: 100px
-        transform: rotate(-30.08deg)
+        transform: rotate(-36.15deg)
         z-index: 1
 
 .right-wrapper
@@ -84,6 +91,7 @@ $color-orange: #F28B64
     position: absolute
     top: 150px
     right: 76px
+    z-index: 5
     &__icons-box
         margin-bottom: 1px
         padding-left: 10px
@@ -95,6 +103,7 @@ $color-orange: #F28B64
 
 .icons
     display: inline-flex
+
     &__item
         display: flex
         justify-content: center
@@ -115,10 +124,10 @@ $color-orange: #F28B64
     &__hr
         width: 65px
         position: absolute
-        bottom: 0
+        bottom: 0px
         margin: 0
         border: none
-        border: 1px solid black
+        border-top: 1px solid black
 
 .buttons
     display: inline-flex
@@ -132,7 +141,6 @@ $color-orange: #F28B64
         border: none
         font-size: 18px
         color: white
-
     &__icon-btn
         display: inline-flex
         align-items: center
@@ -140,3 +148,23 @@ $color-orange: #F28B64
             margin-right: 12px
     &__text
         font-size: 16px
+
+.elipse
+    width: 194px
+    height: 194px
+    background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44, 44, 44, 0.5) 85.74%)
+    border-radius: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+    &_dig
+        width: 282px
+        height: 282px
+    &__subtract
+        width: 129.33px
+        height: 129.33px
+        background: #F0F0F0
+        border-radius: 150px
+        &_big
+            width: 188px
+            height: 188px
